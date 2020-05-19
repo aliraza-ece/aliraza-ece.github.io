@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="robots" content="index, follow"/>
+	<title>Ali Raza</title>
+	<link rel="shortcut icon" href="icon.ico">
+	<!-- Google Font Roboto -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,100italic,300italic,400" rel="stylesheet" type="text/css">
+	<!-- Bootstrap 3.3.5 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!-- Google Analytics -->
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-72131602-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+  <!-- Loading -->
+  <div class="se-pre-con"></div>
+	<!-- Header -->
+	<header class="parallax-window" data-parallax="scroll" data-image-src="img/bg.png">
+		
+
+		<div class="container">
+			<img class="img-circle imgsus" alt="Ali Raza" src="img/profile.jpg"/>
+			<h1 class="name-boss">Ali Raza</h1>
+			<h2 class="main-details">PhD student | Photographer | PC gamer </h2>
+      <br/><br/>
+      <div class="text-center btn-class">
+        <a href="http://github.com/aliraza-ece" class="social-ink">
+          <img class="socl" src="img/github.png" alt="github"/>
+        </a>
+        <a href="https://pk.linkedin.com/in/engineeraliraza/" class="social-ink">
+          <img class="socl" src="img/linkedin.png" alt="linkedin"/>
+        </a>
+       <!--  <a href="http://devpost.com/AlstonLin" class="social-ink">
+          <img class="socl" src="img/devpost.png" alt="devpost"/>
+        </a> -->
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <a class="btn-dwnld" href="_">Resume</a>
+      </div>
+		</div>
+	</header>
+	<!-- Skills -->
+	
+
+	<!-- Contact me -->
+	
+	<!-- // Contact me -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script src="js/type.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/sendemail.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/jquery.fancybox-thumbs.js"></script>
+	<script>
+	
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+  $(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+		    var target = this.hash;
+		    var $target = $(target);
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		})
+	  $('.fancybox-thumbs').fancybox({
+			prevEffect : 'none',
+			nextEffect : 'none',
+			closeBtn  : false,
+			arrows    : false,
+			nextClick : true,
+			helpers : {
+				thumbs : {
+					width  : 50,
+					height : 50
+				}
+			}
+		});
+
+		$('.fancybox-media').click(function(){
+			$.fancybox({
+				'padding'	: 0,
+				'autoScale': false,
+				'transitionIn': 'none',
+				'transitionOut': 'none',
+				'title': this.title,
+				'width': 640,
+				'height': 385,
+				'href': this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+				'type': 'iframe',
+				'iframe': {
+					'wmode': 'transparent',
+					'allowfullscreen': 'true'
+				}
+			});
+			return false;
+		});
+
+		$('.owl-carousel-portrait').owlCarousel({
+    		items:3
+		});
+
+		$('.owl-carousel-landscape').owlCarousel({
+			items:3
+		});
+
+		$(window).resize(function(){
+			window.setTimeout(function(){
+				$(window).trigger('resize.px.parallax');
+			}, 250);
+		});
+	});
+	</script>
+</body>
+</html>
