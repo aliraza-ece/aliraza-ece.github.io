@@ -945,6 +945,22 @@ ul {
   padding-bottom: 0;
 }
 
+.about .timeline .item .content small2 {
+	color: #000000;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+
+}
+
+.about .timeline .item .content small {
+    color: #ffffff;
+    padding: 3px 8px;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
 /* ------------------------------
 		. Services 
 ------------------------------ */
