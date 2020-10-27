@@ -31,7 +31,7 @@ Table of Content
   padding: 0;
   font-family: inherit;
   outline: none !important;
-  list-style: none !important;
+  /*list-style: none !important; */
   text-decoration: none !important;
 }
 
@@ -125,7 +125,14 @@ img {
 
 ul {
   margin-bottom: 0;
+  list-style-type: none;
 }
+
+ul.aa {
+  margin-bottom: 0;
+  list-style-type: disc;
+}
+
 
 .list-inline li {
   display: inline-block;
