@@ -968,6 +968,13 @@ ul.aa {
     letter-spacing: 0.5px;
 }
 
+.services .timeline .item .content small {
+  color: #ffffff;
+  padding: 3px 8px;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
 /* ------------------------------
 		. Services 
 ------------------------------ */
@@ -1011,6 +1018,7 @@ ul.aa {
   color: #f21e4e;
   font-weight: 700;
 }
+
 
 /* ------------------------------
 		 Works
